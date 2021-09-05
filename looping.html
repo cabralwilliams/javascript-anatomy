@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Looping</title>
+        <link rel="stylesheet" href="./assets/css/style.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Looping</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="./index.html">JavaScript Anatomy</a>
+                    </li>
+                    <li>
+                        <a href="#forLoop">For Loop</a>
+                    </li>
+                    <li>
+                        <a href="#whileLoop">While Loop</a>
+                    </li>
+                    <li>
+                        <a href="#doWhileLoop">Do...While Loop</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <article class="main-content" id="forLoop">
+                    <div class="article-info">
+                        <h2><i>for</i> Loop</h2>
+                        <p>The for loop is perhaps the easiest JavaScript looping structure to apply.  The for loop resembles a parameterized function or method and generally will include three statement parameters.  The first statement is the <span class="redFont">variable declaration/initialization</span>.  The second is the <span class="greenFont">test condition</span>.  The third is the <span class="blueFont">variable incrementation</span>.</p>
+                    </div>
+                    <div class="article-demo">
+                        <div class="demo-container">
+                            <h3>Simple <i>for</i> Loop</h3>
+                            <div class="demo-interface">
+                                <div class="interface-input interface-div">
+                                    <h4>Inputs</h4>
+                                    <div><label for="variableName0">Variable Name: </label><select id="variableName0" class="input-selector"><option value="i">i</option><option value="j">j</option><option value="k">k</option><option value="m">m</option><option value="n">n</option></select></div>
+                                    <div><label for="startValue0">Start Value: </label><input type="number" step="1" value="0" placeholder="0" id="startValue0" class="input-selector"/></div>
+                                    <div><label for="finalValue0">Final Value: </label><input type="number" step="1" value="100" placeholder="100" id="finalValue0" class="input-selector"/></div>
+                                    <div><label for="increment0">Increment: </label><input type="number" step="1" value="1" placeholder="1" id="increment0" class="input-selector"/></div>
+                                    <div><button id="submit0">Submit</button> | <button id="clear0">Clear</button></div>
+                                </div>
+                                <div class="">
+                                    <h4>Rendered Code</h4>
+                                    <div class="interface-div">
+                                        <div id="forLoopCode0"></div>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <h4>System Actions</h4>
+                                    <div class="interface-div">
+                                        <div id="forLoopAction0"></div>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <h4>Console Output</h4>
+                                    <div class="interface-div">
+                                        <div id="forLoopConsole0"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="demo-container">
+                            <h3><i>for</i> Loop Omissions</h3>
+                            <div class="demo-interface">
+                                <div class="interface-input interface-div">
+                                    <h4>Inputs</h4>
+                                    <div><input type="radio" name="forOmit" value="declaration" id="declaration1" /><label for="declaration1">Variable Declaration</label></div>
+                                    <div><input type="radio" name="forOmit" value="condition" id="condition1" /><label for="condition1">Variable Condition</label></div>
+                                    <div><input type="radio" name="forOmit" value="increment" id="increment1" /><label for="increment1">Variable Incrementation</label></div>
+                                    <div><i>Omit one of the above.</i></div>
+                                    <div><label for="variableName1">Variable Name: </label><select id="variableName1" class="input-selector"><option value="i">i</option><option value="j">j</option><option value="k">k</option><option value="m">m</option><option value="n">n</option></select></div>
+                                    <div><label for="startValue1">Start Value: </label><input type="number" step="1" value="0" placeholder="0" id="startValue1" class="input-selector"/></div>
+                                    <div><label for="finalValue1">Final Value: </label><input type="number" step="1" value="100" placeholder="100" id="finalValue1" class="input-selector"/></div>
+                                    <div><label for="increment1A">Increment: </label><input type="number" step="1" value="1" placeholder="1" id="increment1A" class="input-selector"/></div>
+                                    <div><button id="submit1">Submit</button> | <button id="clear1">Clear</button></div>
+                                </div>
+                                <div class="">
+                                    <h4>Broken Code</h4>
+                                    <div class="interface-div">
+                                        <div id="forLoopBroken1"></div>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <h4>Working Code</h4>
+                                    <div class="interface-div">
+                                        <div id="forLoopWorking1"></div>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <h4>Notes</h4>
+                                    <div class="interface-div">
+                                        <div id="forLoopNotes1"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="main-content" id="whileLoop">
+                    <div class="article-info">
+                        <h2><i>while</i> Loop</h2>
+                        <p>The while loop appears simpler than does the for loop, but the while loop is likely a more frequent cause of infinite loops.  The while loops takes a single argument: a <span class="greenFont">conditional statement</span>.  You must ensure that if the while loop is entered that the input condition at some point becomes false or that you have a break statement to escape the loop.</p>
+                    </div>
+                    <div class="article-demo">
+                        <div class="demo-container">
+                            <h3>Basic <i>while</i> Loop</h3>
+                            <div class="demo-interface">
+                                <div class="interface-input interface-div">
+                                    <h4>Inputs</h4>
+                                    <div><label for="variableName2">Variable Name: </label><select id="variableName0" class="input-selector"><option value="i">i</option><option value="j">j</option><option value="k">k</option><option value="m">m</option><option value="n">n</option></select></div>
+                                    <div><label for="maxValue2">Maximum Value: </label><input type="number" step="1" value="0" placeholder="0" id="maxValue2" min="0" class="input-selector"/></div>
+                                    <div><button id="submit2">Submit</button> | <button id="clear2">Clear</button></div>
+                                </div>
+                                <div class="">
+                                    <h4>Rendered Code</h4>
+                                    <div class="interface-div">
+                                        <div id="whileLoopCode2"></div>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <h4>System Actions</h4>
+                                    <div class="interface-div">
+                                        <div id="whileLoopAction2"></div>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <h4>Console Output</h4>
+                                    <div class="interface-div">
+                                        <div id="whileLoopConsole2"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                
+            </section>
+        </main>
+        <script src="./assets/js/looping.js"></script>
+        <script src="./assets/js/loopingControl.js"></script>
+    </body>
+</html>

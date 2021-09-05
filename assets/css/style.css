@@ -1,1 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+:root {
+    --color1: #D15A32;
+    --color2: #51DAB2;
+    --color3: #EF7850;
+    --color4: #6FF8D0;
+    --grey1: #C9C9C9;
+}
+
+/*Header styles*/
+header {
+    display: flex;
+    padding: 20px 50px;
+    justify-content: space-between;
+    background-color: var(--color1);
+}
+
+header h1 {
+    flex: 4;
+    font-size: 44px;
+    color: var(--color2);
+}
+
+header nav {
+    flex: 11;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    margin-top: 10px;
+}
+
+header nav ul li {
+    list-style-type: none;
+    font-size: 32px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: var(--color2);
+    padding: 5px 10px;
+}
+
+header nav ul li:hover {
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--color1);
+}
+
+header nav ul li a:hover {
+    text-decoration: none;
+    color: var(--color1);
+    background-color: var(--color2);
+    box-shadow: 0 0 10px black;
+}
+/*End of header styles*/
+main {
+    padding: 20px 50px;
+}
+
+.main-content {
+    flex-flow: column wrap;
+}
+
+.article-info h2 {
+    font-size: 36px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.article-demo {
+    flex-flow: column wrap;
+}
+
+.demo-interface {
+    background-color: var(--grey1);
+    padding: 20px;
+    box-shadow: 0 0 10px black;
+}
+
+.demo-container h3 {
+    font-size: 27px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.demo-interface {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.demo-interface div {
+    margin-right: 15px;
+    flex: 1 25%;
+}
+
+.demo-interface div:first-child {
+    flex: 1 16%;
+}
+
+.interface-input div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-selector {
+    width: 50px;
+}
+
+.interface-div {
+    height: 200px;
+    overflow: auto;
+}
+
+/*JavaScript Created Styles*/
+.marginLeft30 {
+    margin-left: 30px;
+}
+
+.marginLeft60 {
+    margin-left: 60px;
+}
+
+.redFont {
+    color: red;
+}
+
+.greenFont {
+    color: green;
+}
+
+.blueFont {
+    color: blue;
+}
